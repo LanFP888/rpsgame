@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>A game of RPS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/favicon-LP.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <!--below scripts are important for bootstrap navigation collapse and expand-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="script/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row text-center">
+
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-12">
+            <h4 id="result"></h4>
+          </div>
+        </div>
+
+        <!--Inputs-->
+        <div class="row">
+          <!--User Input-->
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-12">
+                <h4>Your Input:</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <img id="userInputImg">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <h5 id="userInput"></h5>
+              </div>
+            </div>
+          </div>
+
+          <!--Computer Input-->
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-12">
+                <h4>Computer Input:</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <img id="computerInputImg">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <h5 id="computerInput"></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Win Counter-->
+        <div class="row">
+          <!--User Win Counter-->
+          <div class="col-6">
+            <div class="row">
+              <div class="col-12">
+                <h4>My Win:</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <h5 id="myWin">0</h5>
+              </div>
+            </div>
+          </div>
+
+          <!--Computer Win Counter-->
+          <div class="col-6">
+            <div class="row">
+              <div class="col-12">
+                <h4>Computer Win:</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <h5 id="computerWin">0</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">RPS Rule</h5>
+            <p class="card-text">Quick Reference for RPS Rules</p>
+          </div>
+          <img class="card-img-top" src="images/9-RPS-example.png" alt="RPS Rule">
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Box-->
+    <div class="modal" tabindex="-1" role="dialog" id="launchModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome to the RPS Game!</h5>
+          </div>
+          <div class="modal-body">
+            <p>Press <strong>r</strong> <strong>p</strong> or <strong>s</strong> key on your keyboard to start the
+              game, each time you win against the computer you
+              will get one point, have fun!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Let's Play</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
